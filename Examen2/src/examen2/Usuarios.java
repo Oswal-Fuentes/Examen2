@@ -1,13 +1,16 @@
 package examen2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Usuarios {
+public class Usuarios implements Serializable {
 
     private String nombre, username, password;
     private int edad;
     private ArrayList<Object> playlists = new ArrayList();
     private ArrayList<Canciones> favoritos = new ArrayList();
+
+    private static final long SerialVersionUID = 777L;
 
     public Usuarios() {
     }

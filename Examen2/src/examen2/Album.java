@@ -1,11 +1,14 @@
 package examen2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Album {
+public class Album implements Serializable{
 
     private String nombre, artista;
     private ArrayList<Canciones> canciones = new ArrayList();
+    
+    private static final long SerialVersionUID = 777L;
 
     public Album() {
     }

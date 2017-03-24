@@ -1,9 +1,13 @@
 package examen2;
 
-public class Canciones {
+import java.io.Serializable;
+
+public class Canciones implements Serializable {
 
     private String Nombre, artista, genero;
     private int duracion;
+
+    private static final long SerialVersionUID = 777L;
 
     public Canciones() {
     }
