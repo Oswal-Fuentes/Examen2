@@ -7,7 +7,7 @@ public class Usuarios implements Serializable {
 
     private String nombre, username, password;
     private int edad;
-    private ArrayList<Object> playlists = new ArrayList();
+    private ArrayList<Playlists> playlists = new ArrayList();
     private ArrayList<Canciones> favoritos = new ArrayList();
 
     private static final long SerialVersionUID = 777L;
@@ -22,11 +22,11 @@ public class Usuarios implements Serializable {
         this.edad = edad;
     }
 
-    public ArrayList<Object> getPlaylists() {
+    public ArrayList<Playlists> getPlaylists() {
         return playlists;
     }
 
-    public void setPlaylists(ArrayList<Object> playlists) {
+    public void setPlaylists(ArrayList<Playlists> playlists) {
         this.playlists = playlists;
     }
 
